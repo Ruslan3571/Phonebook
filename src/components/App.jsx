@@ -12,6 +12,7 @@ import {
   selectIsLoadingAuth,
   selectIsLoadingContacts,
 } from './redux/selectors';
+import { NotFound } from './pages/NotFound';
 
 export function App() {
   const isLoadingAuth = useSelector(selectIsLoadingAuth);
@@ -31,6 +32,7 @@ export function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

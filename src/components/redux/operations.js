@@ -50,7 +50,7 @@ export const login = createAsyncThunk(
       Notify.success(`Welcome `);
       return response.data;
     } catch (e) {
-      console.log(e.message);
+      Notify.warning(`Wrong login and/or password`);
       return thunkAPI.rejectWithValue(e.message);
     }
   }
@@ -59,7 +59,9 @@ export const login = createAsyncThunk(
 export const logout = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
   try {
     const response = await axios.post('/users/logout');
+
     axios.defaults.headers.common.Authorization = null;
+
     return response.data;
   } catch (e) {
     return thunkAPI.rejectWithValue(e.message);
