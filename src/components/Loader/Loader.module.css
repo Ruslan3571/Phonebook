@@ -16,3 +16,11 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
+.phonebook {
+  padding: 78px 120px;
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  background-image: url(https://venturebeat.com/wp-content/uploads/2012/02/contacts.jpg?fit=482%2C485&strip=all);
+}

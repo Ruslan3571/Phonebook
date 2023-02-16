@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  list-style: none;
+}
+.items {
+  padding: 2px 15px;
+  border-radius: 5px;
+  background-color: burlywood;
+  cursor: pointer;
+}
+.items:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.items:hover {
+  background-color: azure;
+}
+.items:active {
+  background-color: greenyellow;
+}
+
+.items a {
+  text-decoration: none;
+  color: inherit;
+}

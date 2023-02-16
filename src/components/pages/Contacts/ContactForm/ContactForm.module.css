@@ -1,10 +1,11 @@
 .contactForm {
-  width: 250px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   text-align: center;
   row-gap: 10px;
   margin: 20px auto 20px auto;
+  padding-bottom: 20px;
 }
 .contactLabel {
   display: flex;
@@ -17,12 +18,12 @@
 
 .btn {
   padding: 5px;
+  margin-top: 10px;
   font-size: 17px;
   border-color: inherit;
   border: inherit;
   border-radius: 10px;
   background-color: white;
-
   border-color: inherit;
 }
 .btn:hover {
